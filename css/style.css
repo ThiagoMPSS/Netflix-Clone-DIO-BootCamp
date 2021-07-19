@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    font-size: 16px;
+    --primary-color: black;
+    --primary-text-color: white;
+    --secondary-text-color: red;
+    --primary-button-hover: white;
+    --primary-button-hover-text: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--primary-color);
+    cursor: default;
+}
+
+header .wrapper {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,.5)70%, rgba(0,0,0,0)100%);
+    color: var(--primary-text-color);
+}
+
+header .wrapper nav {
+    margin: auto 0 auto 10px;
+}
+
+header .wrapper nav * {
+    margin-right: 10px;
+    color: white;
+    transition: ease all .3s;
+}
+
+header .wrapper nav *:hover {
+    color: gray;
+}
+
+header .wrapper h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: var(--secondary-text-color);
+    letter-spacing: 2px;
+}
+
+.banner-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 20rem;
+    padding: 20px;
+
+    background: linear-gradient(rgba(0,0,0,0)30%,rgba(0,0,0,.5)41%), url('/imgs/Batman-the-Darknight.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-principal .wrapper {
+    color: white;
+    width: 80%;
+}
+
+.banner-principal h2 {
+    margin-bottom: 10px;
+}
+
+.banner-principal p {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 2.3em;
+
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+
+.banner-principal .wrapper .wrapper-buttons {
+    display: inline-block;
+}
+
+.banner-principal button {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: .25s ease all;
+}
+
+.banner-principal button:hover {
+    background-color: var(--primary-button-hover);
+    color: var(--primary-button-hover-text);
+}
+
+.listas .wrapper  {
+    color:white;
+}
+
+.owl-carousel .owl-dots {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+    border-radius: 0px !important;
+    width: 12px !important;
+    height: 2px !important;
+    margin-left: 0 !important;
+    margin-right: 4px !important;
+}
+
+.owl-carousel .owl-next {
+    position: absolute;
+    top: 34%;
+    right: 0;
+}
+
+.owl-carousel .owl-prev {
+    position: absolute;
+    top: 34%;
+    left: 0;
+}
+
+.owl-carousel .owl-next span, .owl-carousel .owl-prev span {
+    font-size: 26px;
+}
+
+.owl-carousel .owl-stage-outer{
+    margin-top: 20px;
+}
