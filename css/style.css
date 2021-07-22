@@ -29,6 +29,7 @@ header .wrapper {
     display: flex;
     background: linear-gradient(rgba(0,0,0,.5)70%, rgba(0,0,0,0)100%);
     color: var(--primary-text-color);
+	z-index: 10;
 }
 
 header .wrapper nav {
@@ -39,6 +40,7 @@ header .wrapper nav * {
     margin-right: 10px;
     color: white;
     transition: ease all .3s;
+	font-weight: bold;
 }
 
 header .wrapper nav *:hover {
@@ -110,6 +112,10 @@ header .wrapper h1 {
     position: absolute;
     top: 0px;
     right: 0px;
+}
+
+.owl-carousel .item {
+	cursor: pointer;
 }
 
 .owl-carousel .owl-dots .owl-dot span {
